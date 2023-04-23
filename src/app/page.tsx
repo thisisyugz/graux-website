@@ -1,13 +1,14 @@
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import Header from "./components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
 const HomePage = () => {
 	return (
 		<>
-			<h1>Welcome to Graux</h1>
+			<Header />
 		</>
 	);
 };
