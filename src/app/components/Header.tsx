@@ -4,7 +4,7 @@ import Link from "next/link";
 const Header = () => {
 	return (
 		<div className="bg-purple-400">
-			<div className="header-height container mx-auto px-0 pt-24 text-center">
+			<div className="header-height container mx-auto w-5/6 pt-24 text-center">
 				<h1 className="text-center text-6xl font-bold">
 					Decentralization for
 					<br />
@@ -18,44 +18,35 @@ const Header = () => {
 					</button>
 					<button className="rounded bg-purple-600 px-4 py-2 font-bold text-white hover:bg-blue-400 hover:bg-purple-800">Sex with You</button>
 				</div>
-				<div className="mt-10 inline-block h-60 w-96 bg-red-600"></div>
+				<div className="mt-10 inline-block h-60 w-96 bg-red-600">Sexy 3D Animation Here</div>
 
 				{/* CARDS */}
 
 				{/* <!-- CARD COLUMNS --> */}
-				<div className="container mx-auto mt-5 px-2">
+				<div className="mt-5 h-96 p-5 px-3 align-top md:flex">
 					{/* <!-- Flex on med screens and up --> */}
-					<div className="md:flex">
-						<div className="m-2 flex-1 rounded bg-gray-400 px-5 py-5 text-center text-gray-700">
-							<div className="lg:flex lg:items-center">
-								<div className="lg:flex-shrink-0">
-									<img className="rounded-lg lg:w-64" src="https://i.ibb.co/mJJNkTJ/img2.jpg" alt="" />
-								</div>
-								<div className="mt-4 lg:ml-6 lg:mt-0">
-									<div className="text-sm font-bold uppercase tracking-wide text-indigo-600">Networking</div>
-									<a href="#" className="mt-1 block text-lg font-semibold leading-tight text-gray-900 hover:underline">
-										Finding connections to help your business grow
-									</a>
-								</div>
-							</div>
+					<div className="mx-5 h-40 rounded bg-white px-5 py-5 text-center text-gray-700">
+						<div className="mx-auto mt-4">
+							<div className="text-xl font-bold tracking-wide text-indigo-600">Create powerful crypto-tools</div>
+							<Link href="#" className="mt-2 block text-lg font-normal leading-tight text-gray-900 hover:underline">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, eaque.
+							</Link>
 						</div>
-						<div className="m-2 flex-1 rounded bg-gray-400 px-5 py-5 text-center text-gray-700">
-							<div className="lg:flex lg:items-center">
-								<div className="lg:flex-shrink-0">
-									<img
-										className="rounded-lg lg:w-64"
-										src="https://i.ibb.co/w4wGYvQ/img1.jpg
-"
-										alt=""
-									/>
-								</div>
-								<div className="mt-4 lg:ml-6 lg:mt-0">
-									<div className="text-sm font-bold uppercase tracking-wide text-indigo-600">Marketing</div>
-									<a href="#" className="mt-1 block text-lg font-semibold leading-tight text-gray-900 hover:underline">
-										Finding customers for your new business
-									</a>
-								</div>
-							</div>
+					</div>
+					<div className="mx-5 h-40 self-end rounded bg-white px-5 py-5 text-center text-gray-700">
+						<div className="mx-auto mt-4">
+							<div className="text-xl font-bold tracking-wide text-indigo-600">For a fraction of a penny</div>
+							<Link href="#" className="mt-2 block text-lg font-normal leading-tight text-gray-900 hover:underline">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, eaque.
+							</Link>
+						</div>
+					</div>
+					<div className="mx-5 h-40 rounded bg-white px-5 py-5 text-center text-gray-700">
+						<div className="mx-auto mt-4">
+							<div className="text-xl font-bold tracking-wide text-indigo-600">Execute Your Graph</div>
+							<Link href="#" className="mt-2 block text-lg font-normal leading-tight text-gray-900 hover:underline">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, eaque.
+							</Link>
 						</div>
 					</div>
 				</div>
