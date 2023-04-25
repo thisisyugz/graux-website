@@ -12,39 +12,39 @@ const Header = () => {
 				</h1>
 				<p className="mt-8 text-2xl">Complete Decentralization for Applications</p>
 				<div className="mx-auto mt-12 flex w-1/2 justify-between">
-					<button className="rounded bg-purple-600 px-4 py-2 font-bold text-white hover:bg-blue-400 hover:bg-purple-800">How to Ask</button>
-					<button className="rounded bg-purple-600 px-4 py-2 font-bold text-white hover:bg-blue-400 hover:bg-purple-800">
+					<button className="bg-purple-600 text-white hover:bg-blue-400 hover:bg-purple-800z rounded px-4 py-2 font-bold">How to Ask</button>
+					<button className="bg-purple-600 text-white hover:bg-blue-400 hover:bg-purple-800z rounded px-4 py-2 font-bold">
 						Your Girlfriend To Have
 					</button>
-					<button className="rounded bg-purple-600 px-4 py-2 font-bold text-white hover:bg-blue-400 hover:bg-purple-800">Sex with You</button>
+					<button className="bg-purple-600 text-white hover:bg-blue-400 hover:bg-purple-800z rounded px-4 py-2 font-bold">Sex with You</button>
 				</div>
-				<div className="mt-10 inline-block h-60 w-96 bg-red-600">Sexy 3D Animation Here</div>
+				<div className="bg-red-600 mt-10 inline-block h-60 w-96">Sexy 3D Animation Here</div>
 
 				{/* CARDS */}
 
 				{/* <!-- CARD COLUMNS --> */}
 				<div className="mt-5 h-96 p-5 px-3 align-top md:flex">
 					{/* <!-- Flex on med screens and up --> */}
-					<div className="mx-5 h-40 rounded bg-white px-5 py-5 text-center text-gray-700">
+					<div className="bg-white text-gray-700 mx-5 h-40 rounded px-5 py-5 text-center">
 						<div className="mx-auto mt-4">
-							<div className="text-xl font-bold tracking-wide text-indigo-600">Create powerful crypto-tools</div>
-							<Link href="#" className="mt-2 block text-lg font-normal leading-tight text-gray-900 hover:underline">
+							<div className="text-indigo-600 text-xl font-bold tracking-wide">Create powerful crypto-tools</div>
+							<Link href="#" className="text-gray-900 mt-2 block text-lg font-normal leading-tight hover:underline">
 								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, eaque.
 							</Link>
 						</div>
 					</div>
-					<div className="mx-5 h-40 self-end rounded bg-white px-5 py-5 text-center text-gray-700">
+					<div className="bg-white text-gray-700 mx-5 h-40 self-end rounded px-5 py-5 text-center">
 						<div className="mx-auto mt-4">
-							<div className="text-xl font-bold tracking-wide text-indigo-600">For a fraction of a penny</div>
-							<Link href="#" className="mt-2 block text-lg font-normal leading-tight text-gray-900 hover:underline">
+							<div className="text-indigo-600 text-xl font-bold tracking-wide">For a fraction of a penny</div>
+							<Link href="#" className="text-gray-900 mt-2 block text-lg font-normal leading-tight hover:underline">
 								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, eaque.
 							</Link>
 						</div>
 					</div>
-					<div className="mx-5 h-40 rounded bg-white px-5 py-5 text-center text-gray-700">
+					<div className="bg-white text-gray-700 mx-5 h-40 rounded px-5 py-5 text-center">
 						<div className="mx-auto mt-4">
-							<div className="text-xl font-bold tracking-wide text-indigo-600">Execute Your Graph</div>
-							<Link href="#" className="mt-2 block text-lg font-normal leading-tight text-gray-900 hover:underline">
+							<div className="text-indigo-600 text-xl font-bold tracking-wide">Execute Your Graph</div>
+							<Link href="#" className="text-gray-900 mt-2 block text-lg font-normal leading-tight hover:underline">
 								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, eaque.
 							</Link>
 						</div>
