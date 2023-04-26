@@ -4,9 +4,11 @@ import logo from "../../../public/logo.png";
 
 const Navbar = () => {
 	return (
-		<nav className="flex flex-wrap items-center justify-between bg-gray-950 p-4">
-			<div className="mr-6 flex flex-shrink-0 items-center text-white">
-				<Image src={logo} className="w-20" alt="grauxLogo"></Image>
+		<nav className="flex flex-wrap items-center justify-between bg-black p-4">
+			<div className="mr-6 flex flex-shrink-0 items-center">
+				<Link href="/">
+					<Image src={logo} className="w-20" alt="grauxLogo"></Image>
+				</Link>
 			</div>
 
 			<div className="block w-full flex-grow sm:flex sm:w-auto sm:items-center">
