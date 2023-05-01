@@ -17,7 +17,7 @@ const libreBaskerville = Libre_Baskerville({
 
 const Header = () => {
 	return (
-		<div className="bg-gray-900 pb-20">
+		<div className="bg-black pb-20">
 			<div className="container mx-auto w-5/6 pt-24 text-center">
 				<h1 className={`${cormorantGaramond.className} text text-center text-5xl text-white`}>
 					Complete <span className="bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">Decentralization</span> for
