@@ -1,54 +1,51 @@
+import { Cormorant_Garamond, Libre_Baskerville } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import mainPhoto from "../../../public/mainphoto.jpg";
+import Box from "../components/Box";
+import Button from "../components/Button";
+
+const cormorantGaramond = Cormorant_Garamond({
+	weight: "700",
+	subsets: ["latin"],
+});
+
+const libreBaskerville = Libre_Baskerville({
+	weight: "400",
+	subsets: ["latin"],
+});
 
 const Header = () => {
 	return (
-		<div className="bg-purple-400">
-			<div className="header-height container mx-auto w-5/6 pt-24 text-center">
-				<h1 className="text-center text-6xl font-bold">
-					Decentralization for
-					<br />
-					Applications
+		<div className="bg-gray-900 pb-20">
+			<div className="container mx-auto w-5/6 pt-24 text-center">
+				<h1 className={`${cormorantGaramond.className} text text-center text-5xl text-white`}>
+					Complete <span className="bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">Decentralization</span> for
 				</h1>
-				<p className="mt-8 text-2xl">Complete Decentralization for Applications</p>
-				<div className="mx-auto mt-12 flex w-1/2 justify-between">
-					<button className="hover:bg-purple-800z rounded bg-purple-600 px-4 py-2 font-bold text-white hover:bg-blue-400">How to Ask</button>
-					<button className="hover:bg-purple-800z rounded bg-purple-600 px-4 py-2 font-bold text-white hover:bg-blue-400">
-						Your Girlfriend To Have
-					</button>
-					<button className="hover:bg-purple-800z rounded bg-purple-600 px-4 py-2 font-bold text-white hover:bg-blue-400">Sex with You</button>
+				<h1 className={`${cormorantGaramond.className} text mt-4 text-center text-7xl text-white`}>Web3 Automation & dApps</h1>
+				<p className={`${libreBaskerville.className} mt-8 text-2xl text-gray-400`}>
+					Automate & perform over hundreds of actions based on events triggered on-chain & off-chain.
+				</p>
+				<div className="mx-auto mt-12 flex w-5/12 justify-between">
+					<Button text="Build on our IDE" />
+					<Button text="App Interface" />
+					<Button text="Marketplace" />
 				</div>
-				<div className="mt-10 inline-block h-60 w-96 bg-red-600">Sexy 3D Animation Here</div>
+				<Image src={mainPhoto} alt="decentralization" className="mx-auto mt-16 w-3/5"></Image>
 
-				{/* CARDS */}
-
-				{/* <!-- CARD COLUMNS --> */}
-				<div className="mt-5 h-96 p-5 px-3 align-top md:flex">
-					{/* <!-- Flex on med screens and up --> */}
-					<div className="mx-5 h-40 rounded bg-white px-5 py-5 text-center text-gray-700">
-						<div className="mx-auto mt-4">
-							<div className="text-xl font-bold tracking-wide text-indigo-600">Create powerful crypto-tools</div>
-							<Link href="#" className="mt-2 block text-lg font-normal leading-tight text-gray-900 hover:underline">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, eaque.
-							</Link>
-						</div>
-					</div>
-					<div className="mx-5 h-40 self-end rounded bg-white px-5 py-5 text-center text-gray-700">
-						<div className="mx-auto mt-4">
-							<div className="text-xl font-bold tracking-wide text-indigo-600">For a fraction of a penny</div>
-							<Link href="#" className="mt-2 block text-lg font-normal leading-tight text-gray-900 hover:underline">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, eaque.
-							</Link>
-						</div>
-					</div>
-					<div className="mx-5 h-40 rounded bg-white px-5 py-5 text-center text-gray-700">
-						<div className="mx-auto mt-4">
-							<div className="text-xl font-bold tracking-wide text-indigo-600">Execute Your Graph</div>
-							<Link href="#" className="mt-2 block text-lg font-normal leading-tight text-gray-900 hover:underline">
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, eaque.
-							</Link>
-						</div>
-					</div>
+				<div className="infoBoxes mt-5 h-96 px-5 pb-0 pt-10 align-top md:flex">
+					<Box
+						title="Create powerful crypto-tools"
+						content="Use pre-made templates or over 180 logical blocks by simply dragging & dropping to create the equivalent of hundreds of lines of code in minutes."
+					/>
+					<Box
+						title="For a fraction of a penny"
+						content="Operations on GraphLinq only charge GLQ as gas based on nodes executed, thus making it extremely cheap to run a graph on our IDE."
+					/>
+					<Box
+						title="Execute Your Graph"
+						content="Automate actions like creating trade orders, sending a mail, creating a token or nft, alerting over social media or mobile and much more."
+					/>
 				</div>
 			</div>
 		</div>
