@@ -2,7 +2,6 @@ import { Cormorant_Garamond, Libre_Baskerville } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import mainPhoto from "../../../public/mainphoto.jpg";
-import Box from "../components/Box";
 import Button from "../components/Button";
 
 const cormorantGaramond = Cormorant_Garamond({
@@ -32,21 +31,6 @@ const Header = () => {
 					<Button text="Marketplace" />
 				</div>
 				<Image src={mainPhoto} alt="decentralization" className="mx-auto mt-16 w-3/5"></Image>
-
-				<div className="infoBoxes mt-5 h-96 px-5 pb-0 pt-10 align-top md:flex">
-					<Box
-						title="Create powerful crypto-tools"
-						content="Use pre-made templates or over 180 logical blocks by simply dragging & dropping to create the equivalent of hundreds of lines of code in minutes."
-					/>
-					<Box
-						title="For a fraction of a penny"
-						content="Operations on GraphLinq only charge GLQ as gas based on nodes executed, thus making it extremely cheap to run a graph on our IDE."
-					/>
-					<Box
-						title="Execute Your Graph"
-						content="Automate actions like creating trade orders, sending a mail, creating a token or nft, alerting over social media or mobile and much more."
-					/>
-				</div>
 			</div>
 		</div>
 	);

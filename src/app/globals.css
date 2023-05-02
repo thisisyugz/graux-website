@@ -6,6 +6,6 @@
 	height: 90rem;
 }
 
-.infoBoxes :nth-child(2) {
+.cards :nth-child(2) {
 	align-self: flex-end;
 }

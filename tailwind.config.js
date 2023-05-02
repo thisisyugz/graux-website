@@ -11,6 +11,8 @@ module.exports = {
 			colors: {
 				grauxPurple: "#8302ff",
 				grauxPink: "#de03f7",
+				twitterBlue: "#1DA1F2",
+				mediumGreen: "#00de78",
 			},
 		},
 	},
