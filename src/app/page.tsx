@@ -1,20 +1,9 @@
-import { Inter } from "next/font/google";
-import Nodes from "../../public/nodes.jpg";
-import Cards from "./components/Cards";
-import Header from "./components/Header";
-import Info from "./components/Info";
-import InfoHolder from "./components/InfoHolder";
+import Header from "./components/header";
 
-const inter = Inter({ subsets: ["latin"] });
-
-const HomePage = () => {
+export default function HomePage() {
 	return (
 		<>
 			<Header />
-			<Cards />
-			<InfoHolder />
 		</>
 	);
-};
-
-export default HomePage;
+}

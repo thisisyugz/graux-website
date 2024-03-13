@@ -1,28 +1,28 @@
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+import Footer from "./components/footer";
+import Navbar from "./components/navbar";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+	weight: "400",
+	subsets: ["latin"],
+	display: "swap",
+	adjustFontFallback: false,
+});
 
-export const metadata = {
+export const metadata: Metadata = {
 	title: "Graux",
-	description: "<Add Graux Description>",
-	icons: {
-		icon: "/favicon.png",
-	},
+	description: "Complete Decentralization for Web3 Automation & dApps",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="en">
-			<head>
-				<link rel="shortcut icon" href="favicon.png" />
-			</head>
-			<body>
+		<html lang="en" className="scroll-smooth" style={{ scrollBehavior: "smooth" }}>
+			<body className={inter.className}>
 				<Navbar />
-				<main>{children}</main>
-				<Footer />
+				{/* {children} */}
+				{/* <Footer /> */}
 			</body>
 		</html>
 	);

@@ -1,8 +1,7 @@
 import { Cormorant_Garamond, Libre_Baskerville } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import mainPhoto from "../../../public/mainphoto.jpg";
-import Button from "../components/Button";
+import { Button } from "./ui/button";
 
 const cormorantGaramond = Cormorant_Garamond({
 	weight: "700",
@@ -14,9 +13,9 @@ const libreBaskerville = Libre_Baskerville({
 	subsets: ["latin"],
 });
 
-const Header = () => {
+export default function Header () {
 	return (
-		<div className="bg-black pb-20">
+		<header className="bg-black pb-20 pt-20 md:pt-28 h-screen">
 			<div className="container mx-auto w-5/6 pt-24 text-center">
 				<h1 className={`${cormorantGaramond.className} text text-center text-5xl text-white`}>
 					Complete <span className="bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">Decentralization</span> for
@@ -26,14 +25,11 @@ const Header = () => {
 					Automate & perform over hundreds of actions based on events triggered on-chain & off-chain.
 				</p>
 				<div className="mx-auto mt-12 flex w-5/12 justify-between">
-					<Button text="Build on our IDE" />
-					<Button text="App Interface" />
-					<Button text="Marketplace" />
+					<Button variant="graux">Build on our IDE</Button>
+					<Button variant="graux">App Interface</Button>
+					<Button variant="graux">Marketplace</Button>
 				</div>
-				<Image src={mainPhoto} alt="decentralization" className="mx-auto mt-16 w-3/5"></Image>
 			</div>
-		</div>
+		</header>
 	);
 };
-
-export default Header;
